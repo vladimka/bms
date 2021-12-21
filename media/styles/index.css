@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    background: linear-gradient(45deg, #2196f3, #00bcd4);
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.stats_wrapper .currencies{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.stats_wrapper .mining_stats{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats_wrapper>*{
+    padding: 5px;
+}
+
+.tab_button{
+    padding: 10px;
+}
+
+.tab_button.active{
+    text-decoration: underline;
+    background: #3384c5;
+}
+
+.tab_button:hover{
+    cursor: pointer;
+}
+
+.header .tab_buttons{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.tab{
+    display: none;
+}
+
+.tab.active{
+    display: block;
+}
+
+.tab#miners{
+    width: 100%;
+    min-height: 300px;
+}
+
+#miners .miner{
+    max-width: 100%;
+    margin: 5px;
+    min-height: 200px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
